@@ -27,7 +27,10 @@ export function SearchField({
   const { t } = useTranslation();
   const [input, setInput] = useState(value);
   const [syncedValue, setSyncedValue] = useState(value);
-  const debouncedSearch = useDebouncedCallback((term: string) => onSearch(term.trim()), debounceMs);
+  const debouncedSearch = useDebouncedCallback((term: string) => {
+    // Skip no-op searches (e.g. only whitespace typed) so the URL and page aren't reset.
+    if (term.trim() !== value) onSearch(term.trim());
+  }, debounceMs);
 
   // Sync the input when the committed value changes from outside (e.g. browser back button).
   if (value !== syncedValue) {
