@@ -7,3 +7,5 @@ export const ProductDetailsPage = lazy(
   () => import('@/features/products/pages/ProductDetailsPage'),
 );
 export const CartPage = lazy(() => import('@/features/cart/CartPage'));
+export const UsersPage = lazy(() => import('@/features/users/pages/UsersPage'));
+export const UserDetailsPage = lazy(() => import('@/features/users/pages/UserDetailsPage'));

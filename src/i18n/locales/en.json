@@ -124,5 +124,55 @@
     "subtotal": "Subtotal",
     "discount": "Discount",
     "total": "Total"
+  },
+  "users": {
+    "title": "Users",
+    "subtitle": "Store customers and staff",
+    "count_one": "{{count}} user",
+    "count_other": "{{count}} users",
+    "searchPlaceholder": "Search users by name, email or username…",
+    "emptyTitle": "No users found",
+    "emptyDescription": "No users match “{{query}}”. Try another search.",
+    "columns": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company",
+      "role": "Role"
+    },
+    "roles": {
+      "admin": "Admin",
+      "moderator": "Moderator",
+      "user": "User"
+    }
+  },
+  "userDetails": {
+    "notFoundTitle": "User not found",
+    "notFoundDescription": "This user does not exist or was removed.",
+    "backToUsers": "Back to users",
+    "personal": "Personal information",
+    "fullName": "Full name",
+    "maidenName": "Maiden name",
+    "birthDate": "Date of birth",
+    "age": "Age",
+    "gender": "Gender",
+    "bloodGroup": "Blood group",
+    "height": "Height (cm)",
+    "weight": "Weight (kg)",
+    "eyeColor": "Eye color",
+    "hair": "Hair",
+    "address": "Address",
+    "street": "Street",
+    "city": "City",
+    "state": "State",
+    "postalCode": "Postal code",
+    "country": "Country",
+    "education": "Education",
+    "university": "University",
+    "company": "Company",
+    "companyName": "Company name",
+    "jobTitle": "Job title",
+    "department": "Department",
+    "companyAddress": "Company address"
   }
 }

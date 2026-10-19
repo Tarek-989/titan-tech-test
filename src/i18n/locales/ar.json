@@ -144,5 +144,59 @@
     "subtotal": "المجموع الفرعي",
     "discount": "الخصم",
     "total": "الإجمالي"
+  },
+  "users": {
+    "title": "المستخدمون",
+    "subtitle": "عملاء المتجر وفريق العمل",
+    "count_zero": "لا يوجد مستخدمون",
+    "count_one": "مستخدم واحد",
+    "count_two": "مستخدمان",
+    "count_few": "{{count}} مستخدمين",
+    "count_many": "{{count}} مستخدمًا",
+    "count_other": "{{count}} مستخدم",
+    "searchPlaceholder": "ابحث بالاسم أو البريد الإلكتروني أو اسم المستخدم…",
+    "emptyTitle": "لم يتم العثور على مستخدمين",
+    "emptyDescription": "لا يوجد مستخدمون يطابقون «{{query}}». جرّب بحثًا آخر.",
+    "columns": {
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "company": "الشركة",
+      "role": "الدور"
+    },
+    "roles": {
+      "admin": "مدير",
+      "moderator": "مشرف",
+      "user": "مستخدم"
+    }
+  },
+  "userDetails": {
+    "notFoundTitle": "المستخدم غير موجود",
+    "notFoundDescription": "هذا المستخدم غير موجود أو تمت إزالته.",
+    "backToUsers": "العودة إلى المستخدمين",
+    "personal": "المعلومات الشخصية",
+    "fullName": "الاسم الكامل",
+    "maidenName": "اسم العائلة قبل الزواج",
+    "birthDate": "تاريخ الميلاد",
+    "age": "العمر",
+    "gender": "الجنس",
+    "bloodGroup": "فصيلة الدم",
+    "height": "الطول (سم)",
+    "weight": "الوزن (كغ)",
+    "eyeColor": "لون العينين",
+    "hair": "الشعر",
+    "address": "العنوان",
+    "street": "الشارع",
+    "city": "المدينة",
+    "state": "الولاية",
+    "postalCode": "الرمز البريدي",
+    "country": "الدولة",
+    "education": "التعليم",
+    "university": "الجامعة",
+    "company": "الشركة",
+    "companyName": "اسم الشركة",
+    "jobTitle": "المسمى الوظيفي",
+    "department": "القسم",
+    "companyAddress": "عنوان الشركة"
   }
 }
