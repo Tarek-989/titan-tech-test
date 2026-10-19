@@ -24,7 +24,9 @@
     "loading": "جارٍ التحميل…",
     "goHome": "الذهاب إلى الرئيسية",
     "goToFirstPage": "الذهاب إلى الصفحة الأولى",
-    "showingRange": "عرض {{from}}–{{to}} من {{total}}"
+    "showingRange": "عرض {{from}}–{{to}} من {{total}}",
+    "pageOutOfRangeTitle": "لا يوجد شيء في هذه الصفحة",
+    "pageOutOfRangeDescription": "عدد النتائج أقل من رقم هذه الصفحة."
   },
   "errors": {
     "genericTitle": "حدث خطأ ما",
@@ -53,5 +55,41 @@
       "passwordRequired": "كلمة المرور مطلوبة",
       "passwordMin": "يجب ألا تقل كلمة المرور عن 6 أحرف"
     }
+  },
+  "products": {
+    "title": "المنتجات",
+    "subtitle": "تصفّح كتالوج المتجر",
+    "count_zero": "لا توجد منتجات",
+    "count_one": "منتج واحد",
+    "count_two": "منتجان",
+    "count_few": "{{count}} منتجات",
+    "count_many": "{{count}} منتجًا",
+    "count_other": "{{count}} منتج",
+    "searchPlaceholder": "ابحث عن المنتجات…",
+    "category": "الفئة",
+    "allCategories": "كل الفئات",
+    "categoriesError": "تعذّر تحميل الفئات",
+    "sortBy": "ترتيب حسب",
+    "sort": {
+      "default": "المميزة",
+      "price-asc": "السعر: من الأقل إلى الأعلى",
+      "price-desc": "السعر: من الأعلى إلى الأقل",
+      "rating-desc": "الأعلى تقييمًا",
+      "title-asc": "الاسم: أ إلى ي",
+      "title-desc": "الاسم: ي إلى أ"
+    },
+    "clearFilters": "مسح عوامل التصفية",
+    "emptyTitle": "لم يتم العثور على منتجات",
+    "emptyDescription": "جرّب كلمة بحث مختلفة أو أزل بعض عوامل التصفية.",
+    "inStock": "متوفر",
+    "lowStock_zero": "غير متوفر",
+    "lowStock_one": "بقيت قطعة واحدة",
+    "lowStock_two": "بقيت قطعتان",
+    "lowStock_few": "بقيت {{count}} قطع",
+    "lowStock_many": "بقيت {{count}} قطعة",
+    "lowStock_other": "بقيت {{count}} قطعة",
+    "outOfStock": "غير متوفر",
+    "discount": "-{{value}}",
+    "originalPrice": "السعر الأصلي {{price}}"
   }
 }

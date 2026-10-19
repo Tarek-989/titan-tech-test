@@ -24,7 +24,9 @@
     "loading": "Loading…",
     "goHome": "Go to home",
     "goToFirstPage": "Go to first page",
-    "showingRange": "Showing {{from}}–{{to}} of {{total}}"
+    "showingRange": "Showing {{from}}–{{to}} of {{total}}",
+    "pageOutOfRangeTitle": "Nothing on this page",
+    "pageOutOfRangeDescription": "There are fewer results than this page number."
   },
   "errors": {
     "genericTitle": "Something went wrong",
@@ -53,5 +55,33 @@
       "passwordRequired": "Password is required",
       "passwordMin": "Password must be at least 6 characters"
     }
+  },
+  "products": {
+    "title": "Products",
+    "subtitle": "Browse the store catalogue",
+    "count_one": "{{count}} product",
+    "count_other": "{{count}} products",
+    "searchPlaceholder": "Search products…",
+    "category": "Category",
+    "allCategories": "All categories",
+    "categoriesError": "Categories could not be loaded",
+    "sortBy": "Sort by",
+    "sort": {
+      "default": "Featured",
+      "price-asc": "Price: low to high",
+      "price-desc": "Price: high to low",
+      "rating-desc": "Top rated",
+      "title-asc": "Name: A to Z",
+      "title-desc": "Name: Z to A"
+    },
+    "clearFilters": "Clear filters",
+    "emptyTitle": "No products found",
+    "emptyDescription": "Try a different search term or remove some filters.",
+    "inStock": "In stock",
+    "lowStock_one": "Only {{count}} left",
+    "lowStock_other": "Only {{count}} left",
+    "outOfStock": "Out of stock",
+    "discount": "-{{value}}",
+    "originalPrice": "Original price {{price}}"
   }
 }
