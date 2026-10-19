@@ -117,5 +117,32 @@
     "warranty": "الضمان",
     "shipping": "الشحن",
     "returnPolicy": "سياسة الإرجاع"
+  },
+  "cart": {
+    "title": "سلة المشتريات",
+    "subtitle": "سلة مشتريات {{name}}",
+    "cartNumber": "السلة رقم {{id}}",
+    "items_zero": "لا توجد عناصر",
+    "items_one": "عنصر واحد",
+    "items_two": "عنصران",
+    "items_few": "{{count}} عناصر",
+    "items_many": "{{count}} عنصرًا",
+    "items_other": "{{count}} عنصر",
+    "unitPrice": "{{price}} للقطعة",
+    "quantity_zero": "الكمية {{count}}",
+    "quantity_one": "الكمية {{count}}",
+    "quantity_two": "الكمية {{count}}",
+    "quantity_few": "الكمية {{count}}",
+    "quantity_many": "الكمية {{count}}",
+    "quantity_other": "الكمية {{count}}",
+    "emptyTitle": "سلتك فارغة",
+    "emptyDescription": "ستظهر هنا المنتجات التي تضيفها إلى سلتك.",
+    "browseProducts": "تصفّح المنتجات",
+    "summary": "ملخص الطلب",
+    "totalProducts": "المنتجات",
+    "totalQuantity": "إجمالي الكمية",
+    "subtotal": "المجموع الفرعي",
+    "discount": "الخصم",
+    "total": "الإجمالي"
   }
 }

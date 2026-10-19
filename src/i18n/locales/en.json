@@ -105,5 +105,24 @@
     "warranty": "Warranty",
     "shipping": "Shipping",
     "returnPolicy": "Return policy"
+  },
+  "cart": {
+    "title": "My cart",
+    "subtitle": "Shopping cart of {{name}}",
+    "cartNumber": "Cart #{{id}}",
+    "items_one": "{{count}} item",
+    "items_other": "{{count}} items",
+    "unitPrice": "{{price}} each",
+    "quantity_one": "Qty {{count}}",
+    "quantity_other": "Qty {{count}}",
+    "emptyTitle": "Your cart is empty",
+    "emptyDescription": "Products you add to your cart will appear here.",
+    "browseProducts": "Browse products",
+    "summary": "Order summary",
+    "totalProducts": "Products",
+    "totalQuantity": "Total quantity",
+    "subtotal": "Subtotal",
+    "discount": "Discount",
+    "total": "Total"
   }
 }
