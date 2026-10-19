@@ -1,11 +1,17 @@
+import '@/i18n';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import { RouterProvider } from 'react-router';
+import { AppProviders } from '@/app/AppProviders';
+import { router } from '@/app/router';
 
 const rootElement = document.getElementById('root');
 if (!rootElement) throw new Error('Root element "#root" not found');
 
 createRoot(rootElement).render(
   <StrictMode>
-    <h1>Titan Store Dashboard</h1>
+    <AppProviders>
+      <RouterProvider router={router} />
+    </AppProviders>
   </StrictMode>,
 );

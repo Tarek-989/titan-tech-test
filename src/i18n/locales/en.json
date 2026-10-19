@@ -1,0 +1,37 @@
+{
+  "app": {
+    "name": "Titan Store",
+    "subtitle": "Admin dashboard"
+  },
+  "nav": {
+    "products": "Products",
+    "cart": "My cart",
+    "users": "Users",
+    "openMenu": "Open navigation menu",
+    "mainNavigation": "Main navigation"
+  },
+  "language": {
+    "label": "Change language",
+    "en": "English",
+    "ar": "العربية"
+  },
+  "common": {
+    "retry": "Try again",
+    "reload": "Reload page",
+    "back": "Back",
+    "search": "Search",
+    "clearSearch": "Clear search",
+    "loading": "Loading…",
+    "goHome": "Go to home",
+    "goToFirstPage": "Go to first page",
+    "showingRange": "Showing {{from}}–{{to}} of {{total}}"
+  },
+  "errors": {
+    "genericTitle": "Something went wrong",
+    "genericDescription": "An unexpected error occurred. Please try again.",
+    "network": "Network error. Check your connection and try again.",
+    "timeout": "The request timed out. Please try again.",
+    "notFoundTitle": "Page not found",
+    "notFoundDescription": "The page you are looking for doesn't exist or has been moved."
+  }
+}
