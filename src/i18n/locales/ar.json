@@ -33,5 +33,25 @@
     "timeout": "انتهت مهلة الطلب. يرجى المحاولة مرة أخرى.",
     "notFoundTitle": "الصفحة غير موجودة",
     "notFoundDescription": "الصفحة التي تبحث عنها غير موجودة أو تم نقلها."
+  },
+  "auth": {
+    "title": "تسجيل الدخول",
+    "subtitle": "مرحبًا بعودتك! سجّل الدخول لإدارة متجرك.",
+    "username": "اسم المستخدم",
+    "password": "كلمة المرور",
+    "submit": "تسجيل الدخول",
+    "showPassword": "إظهار كلمة المرور",
+    "hidePassword": "إخفاء كلمة المرور",
+    "invalidCredentials": "اسم المستخدم أو كلمة المرور غير صحيحة.",
+    "demoHint": "حساب تجريبي: {{username}} / {{password}}",
+    "useDemo": "استخدام الحساب التجريبي",
+    "accountMenu": "قائمة الحساب",
+    "logout": "تسجيل الخروج",
+    "validation": {
+      "usernameRequired": "اسم المستخدم مطلوب",
+      "usernameMin": "يجب ألا يقل اسم المستخدم عن 3 أحرف",
+      "passwordRequired": "كلمة المرور مطلوبة",
+      "passwordMin": "يجب ألا تقل كلمة المرور عن 6 أحرف"
+    }
   }
 }

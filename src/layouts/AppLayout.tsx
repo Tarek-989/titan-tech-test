@@ -18,6 +18,7 @@ import { NavLink, Outlet, useLocation } from 'react-router';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 import { LoadingState } from '@/components/LoadingState';
+import { UserMenu } from '@/features/auth/components/UserMenu';
 import { NAV_ITEMS } from './navItems';
 
 const DRAWER_WIDTH = 248;
@@ -79,6 +80,7 @@ export function AppLayout() {
           </IconButton>
           <Box sx={{ flexGrow: 1 }} />
           <LanguageSwitcher />
+          <UserMenu />
         </Toolbar>
       </AppBar>
 

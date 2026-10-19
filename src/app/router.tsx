@@ -1,16 +1,40 @@
-import { createBrowserRouter, Navigate } from 'react-router';
+import { createBrowserRouter, Navigate, type RouteObject } from 'react-router';
 import { RouteErrorFallback } from '@/components/RouteErrorFallback';
+import { GuestRoute } from '@/features/auth/GuestRoute';
+import { ProtectedRoute } from '@/features/auth/ProtectedRoute';
 import { AppLayout } from '@/layouts/AppLayout';
+import { AuthLayout } from '@/layouts/AuthLayout';
 import NotFoundPage from '@/pages/NotFoundPage';
+import { LoginPage } from './lazyPages';
 
-export const router = createBrowserRouter([
+export const routes: RouteObject[] = [
   {
-    path: '/',
-    element: <AppLayout />,
     errorElement: <RouteErrorFallback />,
     children: [
-      { index: true, element: <Navigate to="/products" replace /> },
-      { path: '*', element: <NotFoundPage /> },
+      {
+        element: <GuestRoute />,
+        children: [
+          {
+            element: <AuthLayout />,
+            children: [{ path: '/login', element: <LoginPage /> }],
+          },
+        ],
+      },
+      {
+        element: <ProtectedRoute />,
+        children: [
+          {
+            path: '/',
+            element: <AppLayout />,
+            children: [
+              { index: true, element: <Navigate to="/products" replace /> },
+              { path: '*', element: <NotFoundPage /> },
+            ],
+          },
+        ],
+      },
     ],
   },
-]);
+];
+
+export const router = createBrowserRouter(routes);

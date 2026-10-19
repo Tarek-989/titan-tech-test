@@ -33,5 +33,25 @@
     "timeout": "The request timed out. Please try again.",
     "notFoundTitle": "Page not found",
     "notFoundDescription": "The page you are looking for doesn't exist or has been moved."
+  },
+  "auth": {
+    "title": "Sign in",
+    "subtitle": "Welcome back! Sign in to manage your store.",
+    "username": "Username",
+    "password": "Password",
+    "submit": "Sign in",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "invalidCredentials": "Invalid username or password.",
+    "demoHint": "Demo account: {{username}} / {{password}}",
+    "useDemo": "Use demo account",
+    "accountMenu": "Account menu",
+    "logout": "Log out",
+    "validation": {
+      "usernameRequired": "Username is required",
+      "usernameMin": "Username must be at least 3 characters",
+      "passwordRequired": "Password is required",
+      "passwordMin": "Password must be at least 6 characters"
+    }
   }
 }

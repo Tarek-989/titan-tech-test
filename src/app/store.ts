@@ -1,8 +1,11 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/query';
 import { baseApi } from '@/api/baseApi';
+import { authListenerMiddleware } from '@/features/auth/authListeners';
+import { authSlice } from '@/features/auth/authSlice';
 
 const rootReducer = combineReducers({
+  [authSlice.reducerPath]: authSlice.reducer,
   [baseApi.reducerPath]: baseApi.reducer,
 });
 
@@ -13,7 +16,8 @@ export function setupStore(preloadedState?: Partial<RootState>) {
   return configureStore({
     reducer: rootReducer,
     preloadedState,
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(baseApi.middleware),
+    middleware: (getDefaultMiddleware) =>
+      getDefaultMiddleware().prepend(authListenerMiddleware.middleware).concat(baseApi.middleware),
   });
 }
 
