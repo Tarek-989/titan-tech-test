@@ -83,5 +83,27 @@
     "outOfStock": "Out of stock",
     "discount": "-{{value}}",
     "originalPrice": "Original price {{price}}"
+  },
+  "productDetails": {
+    "notFoundTitle": "Product not found",
+    "notFoundDescription": "This product doesn't exist or was removed.",
+    "backToProducts": "Back to products",
+    "ratingValue": "{{value}} out of 5",
+    "specifications": "Specifications",
+    "reviewsCount_one": "{{count}} review",
+    "reviewsCount_other": "{{count}} reviews",
+    "noReviews": "No reviews yet.",
+    "showImage": "Show image {{index}}",
+    "brand": "Brand",
+    "category": "Category",
+    "sku": "SKU",
+    "availability": "Availability",
+    "stock": "Units in stock",
+    "minimumOrder": "Minimum order",
+    "weight": "Weight",
+    "dimensions": "Dimensions (W × H × D)",
+    "warranty": "Warranty",
+    "shipping": "Shipping",
+    "returnPolicy": "Return policy"
   }
 }

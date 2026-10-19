@@ -5,7 +5,7 @@ import { ProtectedRoute } from '@/features/auth/ProtectedRoute';
 import { AppLayout } from '@/layouts/AppLayout';
 import { AuthLayout } from '@/layouts/AuthLayout';
 import NotFoundPage from '@/pages/NotFoundPage';
-import { LoginPage, ProductsPage } from './lazyPages';
+import { LoginPage, ProductDetailsPage, ProductsPage } from './lazyPages';
 
 export const routes: RouteObject[] = [
   {
@@ -29,6 +29,7 @@ export const routes: RouteObject[] = [
             children: [
               { index: true, element: <Navigate to="/products" replace /> },
               { path: 'products', element: <ProductsPage /> },
+              { path: 'products/:productId', element: <ProductDetailsPage /> },
               { path: '*', element: <NotFoundPage /> },
             ],
           },

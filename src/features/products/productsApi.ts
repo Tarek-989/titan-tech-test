@@ -1,6 +1,6 @@
 import { baseApi } from '@/api/baseApi';
 import { buildProductsRequest, transformProductsResponse } from './productsRequest';
-import type { Category, ProductListArgs, ProductsResponse } from './types';
+import type { Category, Product, ProductListArgs, ProductsResponse } from './types';
 
 export const productsApi = baseApi.injectEndpoints({
   endpoints: (build) => ({
@@ -13,6 +13,10 @@ export const productsApi = baseApi.injectEndpoints({
         { type: 'Product', id: 'LIST' },
       ],
     }),
+    getProduct: build.query<Product, number>({
+      query: (id) => `products/${id}`,
+      providesTags: (_result, _error, id) => [{ type: 'Product', id }],
+    }),
     getCategories: build.query<Category[], void>({
       query: () => 'products/categories',
       providesTags: ['Category'],
@@ -22,4 +26,4 @@ export const productsApi = baseApi.injectEndpoints({
   }),
 });
 
-export const { useGetProductsQuery, useGetCategoriesQuery } = productsApi;
+export const { useGetProductsQuery, useGetProductQuery, useGetCategoriesQuery } = productsApi;
