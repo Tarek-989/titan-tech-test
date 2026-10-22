@@ -159,10 +159,11 @@ function UserSections({ user }: { user: User }) {
         />
       </Grid>
       <Grid size={{ xs: 12, md: 6 }}>
-        <Stack spacing={3} sx={{ height: '100%' }}>
+        <Stack spacing={3}>
           <UserInfoSection
             title={t('userDetails.address')}
             icon={<HomeOutlinedIcon />}
+            fillHeight={false}
             items={[
               { label: t('userDetails.street'), value: user.address.address },
               { label: t('userDetails.city'), value: user.address.city },
@@ -174,6 +175,7 @@ function UserSections({ user }: { user: User }) {
           <UserInfoSection
             title={t('userDetails.education')}
             icon={<SchoolOutlinedIcon />}
+            fillHeight={false}
             items={[{ label: t('userDetails.university'), value: user.university }]}
           />
         </Stack>

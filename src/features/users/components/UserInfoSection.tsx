@@ -9,11 +9,17 @@ interface UserInfoSectionProps {
   title: string;
   icon: ReactNode;
   items: InfoItem[];
+  fillHeight?: boolean;
 }
 
-export function UserInfoSection({ title, icon, items }: UserInfoSectionProps) {
+export function UserInfoSection({
+  title,
+  icon,
+  items,
+  fillHeight = true,
+}: UserInfoSectionProps) {
   return (
-    <Card component="section" sx={{ height: '100%' }}>
+    <Card component="section" sx={{ height: fillHeight ? '100%' : 'auto' }}>
       <CardContent>
         <Stack
           direction="row"

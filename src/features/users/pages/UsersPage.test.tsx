@@ -42,6 +42,11 @@ describe('UsersPage', () => {
     ).toBeInTheDocument();
     expect(screen.getByText('@michaelw')).toBeInTheDocument();
     expect(screen.getByText('Moderator')).toBeInTheDocument();
+    expect(screen.getAllByText('626 Main Street')).not.toHaveLength(0);
+    expect(screen.getAllByText('Phoenix')).not.toHaveLength(0);
+    expect(screen.getAllByText('Mississippi')).not.toHaveLength(0);
+    expect(screen.getByText('29112')).toBeInTheDocument();
+    expect(screen.getAllByText('United States')).not.toHaveLength(0);
     expect(screen.getByText('University of Wisconsin--Madison')).toBeInTheDocument();
   });
 
