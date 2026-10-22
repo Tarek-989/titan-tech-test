@@ -2,7 +2,7 @@ import Chip from '@mui/material/Chip';
 import { useTranslation } from 'react-i18next';
 import type { UserRole } from '../types';
 
-const COLORS = { admin: 'secondary', moderator: 'info', user: 'default' } as const;
+const COLORS = { admin: 'primary', moderator: 'success', user: 'info' } as const;
 
 export function RoleChip({ role }: { role: UserRole }) {
   const { t } = useTranslation();
